@@ -9,6 +9,7 @@ class Application
     public $request;
     public $response;
     public $view;
+    public $db;
     protected $middlewares = [];
 
     public function __construct(array $config)
@@ -19,6 +20,10 @@ class Application
         $this->response = new Response();
         $this->view = new View();
 
+        if (isset($config['database'])) {
+            $this->db = Database::getInstance($config['database']);
+        }
+        
         $this->loadRoutes();
     }
 

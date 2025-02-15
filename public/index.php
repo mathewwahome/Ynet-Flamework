@@ -5,7 +5,10 @@ define('YNET_ROOT', dirname(__DIR__));
 
 require YNET_ROOT . '/vendor/autoload.php';
 
-$config = require YNET_ROOT . '/config/app.php';
+$config = [
+    'app' => require YNET_ROOT . '/config/app.php',
+    'database' => require YNET_ROOT . '/config/database.php'
+];
 
 $app = new Ynet\Application($config);
 
