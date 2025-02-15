@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Ynet Framework</title>
-    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <nav>
