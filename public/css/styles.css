@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+.welcome {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
